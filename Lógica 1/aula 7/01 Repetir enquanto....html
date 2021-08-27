@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>Anos que tivemos copa do mundo.</h1>
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br><br>");
+	}
+	
+	function mostra(texto){
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var anoCopa = 1930;
+	var anoAtual = parseInt(prompt("Digite o ano atual."));
+
+
+	while(anoCopa <= anoAtual){
+	mostra("Teve copa em " + anoCopa);
+	anoCopa = anoCopa + 4;
+	}
+
+	mostra("Fim");
+
+</script>

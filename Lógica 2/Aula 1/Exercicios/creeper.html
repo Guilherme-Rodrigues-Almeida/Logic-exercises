@@ -1,0 +1,26 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	// Retângulo 1
+	pincel.fillStyle = 'darkgreen';
+	pincel.fillRect(200, 50, 350, 300);
+
+	// Retângulo 2 e 3
+	pincel.fillStyle= 'black';
+	pincel.fillRect(250, 110, 90, 90);
+	pincel.fillRect(410, 110, 90, 90);
+
+	// Retângulo 4
+	pincel.fillRect( 340, 200, 70, 100);
+
+	// Retângulo 5 e 6
+	pincel.fillRect(300, 240, 40, 110);
+	pincel.fillRect(410, 240, 40, 110);
+
+
+
+</script>

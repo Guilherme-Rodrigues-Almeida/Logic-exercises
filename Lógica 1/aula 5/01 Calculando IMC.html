@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>Cálculo do IMC</h1>
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br><br>");
+	}
+
+	function mostra(texto){
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	function calculaImc(peso, altura){
+
+		return Math.round(peso / (altura *  altura));
+		
+	}
+
+	var	meuPeso = 60;
+	var minhaAltura = 1.71;
+
+	mostra("O meu Imc é: " + calculaImc(meuPeso, minhaAltura));
+	
+	var pesoDoAmigo = 79;
+	var alturaDoAmigo = 1.85;
+
+	mostra("O Imc do meu amigo é: " + calculaImc(pesoDoAmigo, alturaDoAmigo));
+
+	mostra("Somando os dois imc's o resultado é: " + ( calculaImc(meuPeso, minhaAltura) + calculaImc(pesoDoAmigo, alturaDoAmigo) ) );
+
+</script>	

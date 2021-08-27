@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+	<h1>Classificação do seu time</h1>
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br><br>");
+	}
+
+	function mostra(texto){
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var time = prompt("Digite o nome do seu time: ");
+	var vitorias = parseInt(prompt("Digite o número de vitórias do " + time + ": "));
+	var empates = parseInt(prompt("Digite o número de empates do " + time + ": "));
+	var pontuacao = vitorias * 3 + empates; 
+
+	mostra("<big>" + "O " + time + " tem um total de: "+ pontuacao + " pontos." + "</big>");
+
+	if(pontuacao > 28){
+	
+		mostra("<big> O " + time + " está melhor do que o ano passado. </big>");
+	}
+
+	if(pontuacao < 28){
+		mostra("<big> O " + time + " está pior em relação ao ano passado. </big>");
+	}
+	
+	if(pontuacao == 28){
+	mostra("<big> O " + time + " está igual em relação ao ano passado. </big>");
+	}
+
+</script>	
